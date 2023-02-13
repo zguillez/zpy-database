@@ -2,7 +2,7 @@
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
-## Python helpers
+## Pyton database wrapper
 
 # Getting Started
 
@@ -15,15 +15,28 @@ pip install --upgrade zpy-database
 # Usage
 
 ```
-import python_toolz
+from zpy_database import database as db
 
-python_toolz.log("test1")
+db.connect({
+    'conn': os.environ['DB_HOST'],
+    'database': os.environ['DB_NAME'],
+    'user': os.environ['DB_USER'],
+    'password': os.environ['DB_PASS']
+})
 ```
 
 ```
-from python_toolz import helper
+data = db.sql("SELECT id, name FROM my_table")
+print(data[0])
+```
 
-helper.log("test2")
+```
+data = db.sql("SELECT id, name FROM my_table", ['id', 'name'])
+print(data[0]['name'])
+```
+
+```
+db.close()
 ```
 
 # Contributing and issues

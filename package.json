@@ -1,7 +1,7 @@
 {
   "name": "zpy-database",
   "version": "0.1.0",
-  "description": "Pyton helpers",
+  "description": "Pyton database wrapper",
   "repository": "https://github.com/zguillez/zpy-database",
   "license": "MIT",
   "author": {

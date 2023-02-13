@@ -7,7 +7,7 @@ setup(
         version='0.1.0',
         author='Guillermo de la Iglesia',
         author_email='mail@zguillez.io',
-        description='Pyton helpers',
+        description='Pyton database wrapper',
         long_description=(pathlib.Path(__file__).parent / "README.md").read_text(),
         long_description_content_type='text/markdown',
         url='https://github.com/zguillez/zpy-database',
@@ -18,7 +18,6 @@ setup(
             "Operating System :: OS Independent",
         ],
         install_requires=[
-            'numpy',
-            'pandas',
+            'pymysql',
         ],
 )

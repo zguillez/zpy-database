@@ -1,4 +1,4 @@
-from zpy_database import helper
+from zpy_database import database
 
 
-log = helper.log
+database = database.Database()

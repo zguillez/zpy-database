@@ -16,6 +16,11 @@ def capture(command):
 def test_test():
     os.environ["PYTHONPATH"] = "."
     exit_code, out, err = capture([sys.executable, "examples/main.py"])
-    assert exit_code == 0
-    assert out == "test1\ntest2\n"
-    assert err == ""
+    if 'DB_HOST' in os.environ and 'DB_NAME' in os.environ and 'DB_USER' in os.environ and 'DB_PASS' in os.environ:
+        assert exit_code == 0
+        assert out == "Marcilla\n"
+        assert err == ""
+    else:
+        assert exit_code == 1
+        assert out == ""
+        assert err != ""
