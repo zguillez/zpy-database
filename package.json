@@ -1,0 +1,32 @@
+{
+  "name": "zpy-database",
+  "version": "0.1.0",
+  "description": "Pyton helpers",
+  "repository": "https://github.com/zguillez/zpy-database",
+  "license": "MIT",
+  "author": {
+    "name": "Guillermo de la Iglesia",
+    "email": "guillermo@delaiglesia.email",
+    "url": "https://gitlab.com/zguillez"
+  },
+  "main": "python_toolz",
+  "scripts": {
+    "clean": "find . -type f -name .DS_Store -exec rm -f {} \\;",
+    "deploy": "npm run version && npm run deploy:lite",
+    "deploy:lite": "rm -rf ./dist && rm -rf ./*.egg-info && python setup.py sdist && twine upload dist/*",
+    "libs:1": "pip freeze > requirements.txt",
+    "libs:2": "pip install -r requirements.txt -t libs/python --upgrade",
+    "prepare": "npm run test && sort-package-json && bin/prepare.js",
+    "test": "pytest -vvs tests/",
+    "version": "./bin/version.js"
+  },
+  "devDependencies": {
+    "@zguillez/z-git": "^0.1.38",
+    "@zguillez/z-log": "^0.1.22",
+    "@zguillez/z-version": "^12.0.1",
+    "colors": "^1.4.0",
+    "minimist": "^1.2.8",
+    "replace": "^1.2.2",
+    "sort-package-json": "^2.4.1"
+  }
+}
