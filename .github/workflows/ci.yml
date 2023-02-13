@@ -31,6 +31,7 @@ jobs:
       run: |
         python setup.py build
         pip install pytest
+        pip install -r requirements.txt
 
     - name: Check Python version
       run: python -V
