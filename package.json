@@ -1,6 +1,6 @@
 {
   "name": "zpy-database",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Pyton database wrapper",
   "repository": "https://github.com/zguillez/zpy-database",
   "license": "MIT",
@@ -21,8 +21,8 @@
     "version": "./bin/version.js"
   },
   "devDependencies": {
-    "@zguillez/z-git": "^0.1.68",
-    "@zguillez/z-log": "^0.1.62",
+    "@zguillez/z-git": "^0.1.78",
+    "@zguillez/z-log": "^0.1.72",
     "@zguillez/z-version": "^12.0.1",
     "colors": "^1.4.0",
     "minimist": "^1.2.8",

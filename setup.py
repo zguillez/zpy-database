@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
         name='zpy-database',
-        version='0.1.6',
+        version='0.1.7',
         author='Guillermo de la Iglesia',
         author_email='mail@zguillez.io',
         description='Pyton database wrapper',

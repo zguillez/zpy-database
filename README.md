@@ -1,4 +1,4 @@
-# zpy-database v0.1.6
+# zpy-database v0.1.7
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
@@ -53,6 +53,6 @@ project retain their original licenses.
 
 # Changelog
 
-### v0.1.6 (February 13, 2023)
+### v0.1.7 (February 13, 2023)
 
 * Initial commit
